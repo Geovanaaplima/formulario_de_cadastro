@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Completo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="form-container">
-        <h2>Formulário de Cadastro</h2>
-        <form id="formCadastro">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
 
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required minlength="6">
+    <form id="formCadastro">
+        <div class="title">
+            <h2>Formulário de Cadastro</h2>
+        </div>
+        <div class="todo">
+            <div class="column">
+                
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
 
-            <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" required>
+                
+                <input type="email" id="email" name="email" placeholder="Email" required>
 
-            <label for="dataNascimento">Data de Nascimento:</label>
-            <input type="date" id="dataNascimento" name="dataNascimento" required>
+                
+                <input type="password" id="senha" name="senha" placeholder="Senha" required minlength="6">
+            </div>
 
-            <h3>Endereço</h3>
-            <label for="cep">CEP:</label>
-            <input type="text" id="cep" name="cep" required>
+            <div class="column">
+                
+                <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
 
-            <label for="logradouro">Logradouro:</label>
-            <input type="text" id="logradouro" name="logradouro" readonly>
+                
+                <input type="date" id="dataNascimento" name="dataNascimento" placeholder="Data de Nascimento" required>
 
-            <label for="numero">Número:</label>
-            <input type="text" id="numero" name="numero" required>
+            
+                <input type="text" id="cep" name="cep" placeholder="CEP" required>
+            </div>
 
-            <label for="bairro">Bairro:</label>
-            <input type="text" id="bairro" name="bairro" readonly>
+            <div class="column">
+               
+                <input type="text" id="logradouro" name="logradouro"  placeholder="Logradouro" readonly>
 
-            <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade" readonly>
+              
+                <input type="text" id="numero" name="numero" placeholder="Número" required>
 
-            <label for="estado">Estado:</label>
-            <input type="text" id="estado" name="estado" readonly>
+            
+                <input type="text" id="bairro" name="bairro" placeholder="Bairro" readonly>
+            </div>
 
-            <button type="submit">Cadastrar</button>
-        </form>
-    </div>
+            <div class="column">
+            
+                <input type="text" id="cidade" name="cidade" placeholder="Cidade" readonly>
+
+               
+                <input type="text" id="estado" name="estado" placeholder="Estado" readonly>
+
+                <button type="submit">Cadastrar</button>
+            </div>
+
+    </form>
+
 
     <script src="javascript.js"></script>
 </body>
+
 </html>
